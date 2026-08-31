@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #0f1420;
+  color: #e7e9ee;
+}
+
+body {
+  font-family: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #7ce0b8;
+  color: #0f1420;
+}
+
+.font-display {
+  font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+.card {
+  background-color: #171e2e;
+  border: 1px solid #1f293c;
+  border-radius: 0.75rem;
+}
+
+.confidence-bar {
+  height: 8px;
+  border-radius: 999px;
+  background-color: #1f293c;
+  overflow: hidden;
+}
+
+.confidence-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #7ce0b8;
+  outline-offset: 2px;
+}
